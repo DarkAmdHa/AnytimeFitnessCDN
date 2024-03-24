@@ -28,7 +28,6 @@ const awaitSwiperInit = setInterval(()=>{
         document.querySelectorAll('section.swiper-container-custom').forEach(swiperContainer=>{
             //https://swiperjs.com/swiper-api#param-loop
             //Because of nature of how the loop mode works (it will rearrange slides), total number of slides must be >= slidesPerView * 2
-            debugger
             if(swiperContainer.querySelectorAll('.swiper-slide').length < 6){
                 swiperContainer.querySelectorAll('.swiper-slide').forEach(slide=>{
                     const clonedSlide = slide.cloneNode(true);
